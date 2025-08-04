@@ -8,6 +8,8 @@ sudo apt -y install unzip
 echo "Installing NGINX"
 sudo apt -y install nginx
 
-echo "Cloning GIT repository"
-sudo rm /var/www/html/index.nginx-debian.html
+echo "Removing existing files"
+sudo rm -rf /var/www/html/
+
+echo "Cloning GIT respository"
 sudo git clone https://github.com/RajVamshinath/webapp.git /var/www/html
