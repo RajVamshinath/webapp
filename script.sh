@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Updating system"
 sudo apt -y update
 
